@@ -1,11 +1,13 @@
-# api documentation for  [gulp-babel (v6.1.2)](https://github.com/babel/gulp-babel#readme)  [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-babel.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-babel)
+# api documentation for  [gulp-babel (v6.1.2)](https://github.com/babel/gulp-babel#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-babel.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-babel) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-babel.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-babel)
 #### Use next generation JavaScript, today
 
 [![NPM](https://nodei.co/npm/gulp-babel.png?downloads=true)](https://www.npmjs.com/package/gulp-babel)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-babel/build/screen-capture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-gulp_babel_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-babel/build..beta..travis-ci.org/apidoc.html)
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-babel/build/screenCapture.buildNpmdoc.browser.%2Fhome%2Ftravis%2Fbuild%2Fnpmdoc%2Fnode-npmdoc-gulp-babel%2Ftmp%2Fbuild%2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-babel/build/apidoc.html)
 
-![package-listing](https://npmdoc.github.io/node-npmdoc-gulp-babel/build/screen-capture.npmPackageListing.svg)
+![npmPackageListing](https://npmdoc.github.io/node-npmdoc-gulp-babel/build/screenCapture.npmPackageListing.svg)
+
+![npmPackageDependencyTree](https://npmdoc.github.io/node-npmdoc-gulp-babel/build/screenCapture.npmPackageDependencyTree.svg)
 
 
 
