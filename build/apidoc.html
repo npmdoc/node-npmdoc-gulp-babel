@@ -61,12 +61,81 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-babel">module gulp-babel</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-babel.gulp-babel">
+            function <span class="apidocSignatureSpan"></span>gulp-babel
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.gulp-babel" id="apidoc.module.gulp-babel">module gulp-babel</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-babel.gulp-babel" id="apidoc.element.gulp-babel.gulp-babel">
+        function <span class="apidocSignatureSpan"></span>gulp-babel
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">gulp-babel = function (opts) {
+	opts = opts || {};
+
+	return through.obj(function (file, enc, cb) {
+		if (file.isNull()) {
+			cb(null, file);
+			return;
+		}
+
+		if (file.isStream()) {
+			cb(new gutil.PluginError(&#x27;gulp-babel&#x27;, &#x27;Streaming not supported&#x27;));
+			return;
+		}
+
+		try {
+			var fileOpts = objectAssign({}, opts, {
+				filename: file.path,
+				filenameRelative: file.relative,
+				sourceMap: Boolean(file.sourceMap),
+				sourceFileName: file.relative,
+				sourceMapTarget: file.relative
+			});
+
+			var res = babel.transform(file.contents.toString(), fileOpts);
+
+			if (file.sourceMap &#x26;&#x26; res.map) {
+				res.map.file = replaceExtension(res.map.file);
+				applySourceMap(file, res.map);
+			}
+
+			if (!res.ignored) {
+				file.contents = new Buffer(res.code);
+				file.path = replaceExtension(file.path);
+			}
+
+			file.babel = res.metadata;
+
+			this.push(file);
+		} catch (err) {
+			this.emit(&#x27;error&#x27;, new gutil.PluginError(&#x27;gulp-babel&#x27;, err, {
+				fileName: file.path,
+				showProperties: false
+			}));
+		}
+
+		cb();
+	});
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
