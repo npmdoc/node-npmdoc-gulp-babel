@@ -1,6 +1,6 @@
 # npmdoc-gulp-babel
 
-#### api documentation for  [gulp-babel (v6.1.2)](https://github.com/babel/gulp-babel#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-babel.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-babel) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-babel.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-babel)
+#### basic api documentation for  [gulp-babel (v6.1.2)](https://github.com/babel/gulp-babel#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-babel.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-babel) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-babel.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-babel)
 
 #### Use next generation JavaScript, today
 
@@ -97,7 +97,8 @@
             "node",
             "mocha"
         ]
-    }
+    },
+    "bin": {}
 }
 ```
 
